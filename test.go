@@ -104,6 +104,7 @@ func main() {
 	r.HandleFunc("/books/{id}", deleteBook).Methods("DELETE")
 
 	// Start server
+	// hello server
 	log.Fatal(http.ListenAndServe(":8000", r))
 }
 
@@ -112,4 +113,5 @@ func main() {
 // 	"isbn":"4545454",
 // 	"title":"Book Three",
 // 	"author":{"firstname":"Harry","lastname":"White"}
+// new command
 // }
