@@ -95,6 +95,7 @@ func main() {
 	// Hardcoded data - @todo: add database
 	books = append(books, Book{ID: "1", Isbn: "438227", Title: "Book One", Author: &Author{Firstname: "John", Lastname: "Doe"}})
 	books = append(books, Book{ID: "2", Isbn: "454555", Title: "Book Two", Author: &Author{Firstname: "Steve", Lastname: "Smith"}})
+	books = append(books, Book{ID: "3", Isbn: "454555", Title: "Book Three", Author: &Author{Firstname: "Jaber", Lastname: "Sab"}})
 
 	// Route handles & endpoints
 	r.HandleFunc("/books", getBooks).Methods("GET")
