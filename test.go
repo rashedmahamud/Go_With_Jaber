@@ -90,23 +90,27 @@ func deleteBook(w http.ResponseWriter, r *http.Request) {
 // Main function
 func main() {
 	// Init router
-	r := mux.NewRouter()
+	router := mux.NewRouter()
 
 	// Hardcoded data - @todo: add database
-	books = append(books, Book{ID: "1", Isbn: "438227", Title: "Book One", Author: &Author{Firstname: "John", Lastname: "Doe"}})
+
 	books = append(books, Book{ID: "2", Isbn: "454555", Title: "Book Two", Author: &Author{Firstname: "Steve", Lastname: "Smith"}})
 	books = append(books, Book{ID: "3", Isbn: "454555", Title: "Book Three", Author: &Author{Firstname: "Jaber", Lastname: "Sab"}})
 
 	// Route handles & endpoints
-	r.HandleFunc("/books", getBooks).Methods("GET")
-	r.HandleFunc("/books/{id}", getBook).Methods("GET")
-	r.HandleFunc("/books", createBook).Methods("POST")
-	r.HandleFunc("/books/{id}", updateBook).Methods("PUT")
-	r.HandleFunc("/books/{id}", deleteBook).Methods("DELETE")
+	router.HandleFunc("/books", getBooks).Methods("GET")
+	router.HandleFunc("/books/{id}", getBook).Methods("GET")
+	router.HandleFunc("/books", createBook).Methods("POST")
+	router.HandleFunc("/books/{id}", updateBook).Methods("PUT")
+	router.HandleFunc("/books/{id}", deleteBook).Methods("DELETE")
 
 	// Start server
+<<<<<<< HEAD
 	// hello server
 	log.Fatal(http.ListenAndServe(":8000", r))
+=======
+	log.Fatal(http.ListenAndServe(":8000", router))
+>>>>>>> origin/sprint-01
 }
 
 // Request sample
