@@ -104,6 +104,7 @@ func main() {
 	router.HandleFunc("/books/{id}", updateBook).Methods("PUT")
 	router.HandleFunc("/books/{id}", deleteBook).Methods("DELETE")
 
+	log.Fatal(http.ListenAndServe(":8000", r))
 	// Start server
 <<<<<<< HEAD
 	// hello server

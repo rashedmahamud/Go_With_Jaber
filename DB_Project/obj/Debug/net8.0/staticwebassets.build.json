@@ -1,11 +1,12 @@
 {
   "Version": 1,
-  "Hash": "9z7HrvscZ3n35LXJ8lq50hGpyMVjsqLyiqVBYW171kQ=",
+  "Hash": "QFMMNR11vA8ppG3GsnjelErfxA85bKWoLL2ay+idP1o=",
   "Source": "DB_Project",
   "BasePath": "_content/DB_Project",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": []
+  "Assets": [],
+  "Endpoints": []
 }

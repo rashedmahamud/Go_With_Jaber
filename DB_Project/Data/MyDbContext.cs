@@ -14,6 +14,9 @@ namespace DB_Project
         public DbSet<Customer> Customers { get; set; }
         public DbSet<Order> Orders { get; set; }
         public DbSet<OrderDetails> OrderDetails { get; set; }
+        public DbSet<jaber> jabers { get; set; }
+        public DbSet<frist> frists { get; set; } 
+      
     }
 
 }
